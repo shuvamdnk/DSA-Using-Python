@@ -6,9 +6,6 @@ def linear_search(arr,key):
     else:
         print(f"{key} not found")    
 
-        
-
-
 
 n = int(input("Enter Array Size "))
 ele = []
@@ -20,3 +17,4 @@ key = int(input('Enter the key search : '))
 linear_search(ele,key)
 
 
+# Time complexity in O(N)
