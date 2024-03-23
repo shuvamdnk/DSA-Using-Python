@@ -41,7 +41,7 @@
 
 #     arr[i], arr[min_index] = arr[min_index], arr[i]    
 
-
+ 
 # print(arr)
 
 arr = [85,12,54,96,105,102]
