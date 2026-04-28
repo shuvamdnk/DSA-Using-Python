@@ -7,8 +7,8 @@ class DynamicArray:
         self.data = [None] * self.capasity
         self.size = 0
         
-    # def __repr__(self):
-    #     return str(self.data[:self.size])
+    def __repr__(self):
+        return str(self.data[:self.size])
 
     def __len__(self):
         return self.size
