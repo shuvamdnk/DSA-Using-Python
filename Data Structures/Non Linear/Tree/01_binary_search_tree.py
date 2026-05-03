@@ -1,8 +1,4 @@
-# Each node has at most two children: left and right. A complete binary tree fills all levels except
-# possibly the last, which fills left-to-right. A full binary tree has every node with 0 or 2 children
-
 from typing import Any
-
 
 class BinaryTreeNode:
     def __init__(self, data) -> None:
@@ -10,7 +6,7 @@ class BinaryTreeNode:
         self.left = None
         self.right = None
 
-class BinaryTree:
+class BinarySearchTree:
     def __init__(self, data) -> None:
         self.root = BinaryTreeNode(data)
 
@@ -112,7 +108,7 @@ class BinaryTree:
 
             
            
-root = BinaryTree(25)
+root = BinarySearchTree(25)
 
 root.addChild(20)
 root.addChild(120)
