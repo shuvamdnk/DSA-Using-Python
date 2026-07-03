@@ -1,5 +1,5 @@
 import math
-arr = [-2,-4]
+arr = [-2,-4,5,6,98,7]
 size  = len(arr)
 max_sum = -math.inf
 for i in range(size):
