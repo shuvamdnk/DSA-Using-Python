@@ -62,8 +62,16 @@ ll = LinkedList()
 ll.push_front(1)
 ll.push_front(2)
 ll.push_front(24)
+
+ll.print_list()
+print()
+
 ll.push_back(50)
 ll.push_back(54)
+
+ll.print_list()
+print()
+
 ll.pop_front()
 ll.pop_back()
 ll.push_back(102)
