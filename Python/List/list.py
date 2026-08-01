@@ -54,28 +54,35 @@
 # print(len(li) == 0)
 
 # ============================== Access Value ==============================
-l1 = [2,3,5,1,8,4,12,10,6,7]
-print(l1)
-# Access value by index
-print(l1[0])
+# l1 = [2,3,5,1,8,4,12,10,6,7]
+# print(l1)
+# # Access value by index
+# print(l1[0])
 
-# Access value by index range
-print(l1[0:6])
+# # Access value by index range
+# print(l1[0:6])
 
-# Access value by negative index
-print(l1[-1])
+# # Access value by negative index
+# print(l1[-1])
 
-# Access element by negative index range
-print(l1[-3:-1])
+# # Access element by negative index range
+# print(l1[-3:-1])
 
-# Reverse the list
-print(l1[::-1])
+# # Reverse the list
+# print(l1[::-1])
 
-# Reverse the list from index 7 to 5
-print(l1[:5:-1])
+# # Reverse the list from index 7 to 5
+# print(l1[:5:-1])
 
 
-print(l1[:3:-2])
+# print(l1[:3:-2])
 
-# Empty array 6 to 9 with step - 1
-print(l1[6:9:-1])
+# # Empty array 6 to 9 with step - 1
+# print(l1[6:9:-1])
+
+
+
+# list comprehension
+l2 = [i for i in range(20)]
+
+print(l2)

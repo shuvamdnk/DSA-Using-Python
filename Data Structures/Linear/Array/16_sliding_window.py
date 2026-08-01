@@ -11,7 +11,7 @@
 
 
 # Longest substring without repeating characters
-# st = 'sfwrssfffdsrqfeweffsfsbdew'
+st = 'sfwrssfffdsrqfeweffsfsbdew'
 
 # st1 = ''
 # st2 = ''
@@ -34,46 +34,46 @@
 # print(st2)  # Correctly outputs: dsrqfew
 
 
-# seen_chars = set()
-# start = 0
-# max_len = 0
-# longest_sub = ""
+seen_chars = set()
+start = 0
+max_len = 0
+longest_sub = ""
 
-# for end in range(len(st)):
-#     # If the character is already in the window, shrink the window from the left
-#     while st[end] in seen_chars:
-#         seen_chars.remove(st[start])
-#         start += 1
+for end in range(len(st)):
+    # If the character is already in the window, shrink the window from the left
+    while st[end] in seen_chars:
+        seen_chars.remove(st[start])
+        start += 1
     
-#     # Add the current character to our window
-#     seen_chars.add(st[end])
+    # Add the current character to our window
+    seen_chars.add(st[end])
     
-#     # Check if the current window is the longest we've seen
-#     current_window_len = end - start + 1
-#     if current_window_len > max_len:
-#         max_len = current_window_len
-#         longest_sub = st[start:end + 1]
+    # Check if the current window is the longest we've seen
+    current_window_len = end - start + 1
+    if current_window_len > max_len:
+        max_len = current_window_len
+        longest_sub = st[start:end + 1]
 
-# print("Maximum Length:", max_len)
-# print("Longest Substring:", longest_sub)
+print("Maximum Length:", max_len)
+print("Longest Substring:", longest_sub)
 
 
 # Longest subarray with sum K
-arr = [1, 2, 3, 1, 1, 1, 1, 4, 2, 3]
-k = 3
+# arr = [1, 2, 3, 1, 1, 1, 1, 4, 2, 3]
+# k = 3
 
-start = 0
-current_sum = 0
-max_len = 0
+# start = 0
+# current_sum = 0
+# max_len = 0
 
-for end in range(len(arr)):
-    current_sum += arr[end]
+# for end in range(len(arr)):
+#     current_sum += arr[end]
 
-    while current_sum > k and start <= end:
-        current_sum -= arr[start]
-        start += 1
+#     while current_sum > k and start <= end:
+#         current_sum -= arr[start]
+#         start += 1
     
-    if current_sum == k:
-        max_len = max(max_len, end-start +1)
+#     if current_sum == k:
+#         max_len = max(max_len, end-start +1)
 
-print(max_len)
+# print(max_len)
